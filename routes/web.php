@@ -18,8 +18,8 @@ Route::get('login', function () {
 })->name('login');
 
 Route::get('/', function () {
-    return redirect('admin');
-});
+    return view('welcome');
+})->name('home');
 
 
 Route::group(['prefix' => 'admin'], function () {
