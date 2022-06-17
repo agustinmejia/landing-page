@@ -21,6 +21,12 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+Route::get('/portfolio-details/{name}', function () {
+    $data = App\Models\Portfolio::where('slug', request()->name)->first();
+    $data->increment('views');
+    $data->save();
+    return view('portfolio-details', compact('data'));
+})->name('portfolio.details');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

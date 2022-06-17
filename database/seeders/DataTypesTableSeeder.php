@@ -73,6 +73,24 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2021-06-02 17:55:31',
                 'updated_at' => '2021-06-02 17:55:31',
             ),
+            3 => 
+            array (
+                'id' => 4,
+                'name' => 'portfolios',
+                'slug' => 'portfolios',
+                'display_name_singular' => 'Proyecto',
+                'display_name_plural' => 'Proyectos',
+                'icon' => 'voyager-list',
+                'model_name' => 'App\\Models\\Portfolio',
+                'policy_name' => NULL,
+                'controller' => NULL,
+                'description' => NULL,
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
+                'created_at' => '2022-06-17 12:08:22',
+                'updated_at' => '2022-06-17 13:00:11',
+            ),
         ));
         
         
