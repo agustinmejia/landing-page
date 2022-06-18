@@ -19,6 +19,7 @@ class CreatePortfoliosTable extends Migration
             $table->string('name')->nullable();
             $table->string('slug')->unique();
             $table->text('description')->nullable();
+            $table->string('banner')->nullable();
             $table->text('images')->nullable();
             $table->string('url')->nullable();
             $table->string('tags')->nullable();

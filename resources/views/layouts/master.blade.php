@@ -10,7 +10,7 @@
         @yield('meta')
 
         <!-- Favicons -->
-        <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
+        <link href="{{ setting('site.logo') ? asset('storage/'.setting('site.logo')) : asset('assets/img/favicon.png') }}" rel="icon">
         <link href="{{ asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
         <!-- Google Fonts -->
@@ -68,9 +68,9 @@
                         <li><a class="nav-link scrollto" href="{{ url('/') }}#team">Equipo</a></li>
                         <li class="dropdown"><a href="#"><span>Proyectos</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                             <ul>
-                            <li><a href="#" target="_blank">Restaurantes</a></li>
-                            <li><a href="#" target="_blank">Tienda de celulares</a></li>
-                            <li><a href="#" target="_blank">Ecommerce</a></li>
+                            <li><a href="https://gerente.rest" target="_blank">Restaurantes</a></li>
+                            <li><a href="https://phonestore.ideacreativa.dev" target="_blank">Tienda de celulares</a></li>
+                            <li><a href="https://eshop.ideacreativa.dev" target="_blank">Ecommerce</a></li>
                             </ul>
                         </li>
                         <li><a class="nav-link scrollto" href="{{ url('/') }}#contact">Contacto</a></li>
@@ -129,8 +129,8 @@
                     <div class="col-lg-4 col-md-6 footer-newsletter">
                         <h4>Suscribirse</h4>
                         <p>Puedes sucribirte a nuestro boletín para recibir noticias y notificaciones de actualizaciones</p>
-                        <form action="" method="post">
-                        <input type="email" name="email"><input type="submit" value="Subscribirse">
+                        <form action="#" method="post">
+                            <input type="email" name="email" required><input type="submit" value="Subscribirse">
                         </form>
 
                     </div>

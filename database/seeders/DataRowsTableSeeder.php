@@ -433,7 +433,7 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 1,
                 'delete' => 1,
                 'details' => '{}',
-                'order' => 8,
+                'order' => 9,
             ),
             26 => 
             array (
@@ -441,15 +441,15 @@ class DataRowsTableSeeder extends Seeder
                 'data_type_id' => 4,
                 'field' => 'images',
                 'type' => 'multiple_images',
-                'display_name' => 'Images',
+                'display_name' => 'Galería',
                 'required' => 0,
-                'browse' => 1,
+                'browse' => 0,
                 'read' => 1,
                 'edit' => 1,
                 'add' => 1,
                 'delete' => 1,
                 'details' => '{"display":{"width":6},"resize":{"width":"1000","height":null},"quality":"70%","upsize":true,"thumbnails":[{"name":"medium","scale":"50%"},{"name":"small","scale":"25%"},{"name":"cropped","crop":{"width":"300","height":"250"}}]}',
-                'order' => 6,
+                'order' => 7,
             ),
             27 => 
             array (
@@ -481,7 +481,7 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 9,
+                'order' => 10,
             ),
             29 => 
             array (
@@ -497,7 +497,7 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 10,
+                'order' => 11,
             ),
             30 => 
             array (
@@ -513,7 +513,7 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 11,
+                'order' => 12,
             ),
             31 => 
             array (
@@ -529,7 +529,7 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 12,
+                'order' => 13,
             ),
             32 => 
             array (
@@ -545,7 +545,7 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 13,
+                'order' => 14,
             ),
             33 => 
             array (
@@ -561,7 +561,7 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 14,
+                'order' => 15,
             ),
             34 => 
             array (
@@ -576,8 +576,24 @@ class DataRowsTableSeeder extends Seeder
                 'edit' => 1,
                 'add' => 1,
                 'delete' => 1,
-                'details' => '{"validation":{"rule":"max:191"}}',
-                'order' => 7,
+                'details' => '{"validation":{"rule":"max:191"},"display":{"width":6}}',
+                'order' => 8,
+            ),
+            35 => 
+            array (
+                'id' => 36,
+                'data_type_id' => 4,
+                'field' => 'banner',
+                'type' => 'image',
+                'display_name' => 'Portada',
+                'required' => 0,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '{"validation":{"rule":"required"},"display":{"width":6},"resize":{"width":"1000","height":null},"quality":"70%","upsize":true,"thumbnails":[{"name":"medium","scale":"50%"},{"name":"small","scale":"25%"},{"name":"cropped","crop":{"width":"300","height":"250"}}]}',
+                'order' => 6,
             ),
         ));
         
